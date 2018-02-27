@@ -3,8 +3,9 @@
 	<title>Home</title>
 	<link href="portfolio.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Indie+Flower|Sacramento|Taviraj|VT323" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 
@@ -14,10 +15,18 @@
 			<button class="contact jsbtn2"><strong>Contact</strong></button>
 		</div>
 	</div>
+	<ul class="fabList">
+			<li class="btnList facebook"><a href="https://www.facebook.com/logan.musselman.3" class="fabButton"><i class="fab fa-facebook-f"></i></a></li>
+			<li class="btnList twitter"><a href="https://twitter.com/LoganMusselman" class="fabButton"><i class="fab fa-twitter"></i></a></li>
+			<li class="btnList github"><a href="https://github.com/loganmusselman" class="fabButton"><i class="fab fa-github"></i></a></li>
+			<li class="btnList linkedin"><a href="https://www.linkedin.com/in/john-musselman-839b40107" class="fabButton"><i class="fab fa-linkedin"></i></a></li>
+		</ul>
 
-	<div class="container">	
+	<div class="container">
+
 		<h1 class="name">John Musselman</h1>
 		<h3 class="title">Junior Web Developer</h3>
+	
 		<p class="shortInfo">An prospective entry level Web Developer with a focus on UI/UX. Self-motivated, self-taught and willing to take on any challenge with a positive attitude. I will bring a new perspective to your team.</p>
 		<img class="pic" src="/images/image.jpg" alt="main picture"/>
 	</div>
@@ -43,15 +52,19 @@
 		<h3 class="interest">Interested in working together?</h3>
 		<form class="form">
 			<label for="name">First Name: </label>
-			<input style="display: block" type="text" placeholder="First Name" name="firstname" size="30%"/>
+			<input style="display: block" type="text" id="first" placeholder="First Name" name="firstname" size="30%"/>
+			<span id="firstErr"></span>
 			<label for="name">Last Name: </label>
-			<input style="display: block" type="text" placeholder="Last Name" name="lastname" size="30%"/>
+			<input style="display: block" type="text" id="last" placeholder="Last Name" name="lastname" size="30%"/>
+			<span id="lastErr"></span>
 			<label for="email">Email: </label>
-			<input style="display: block" type="email" placeholder="Email" name="email" size="30%"/>
+			<input style="display: block" type="email" id="email" placeholder="Email" name="email" size="30%"/>
+			<span id="emailErr"></span>
 			<label for="phone">Phone: </label>
-			<input style="display: block" type="phone" placeholder="Phone Number" name="phone" size="30%"/>
+			<input style="display: block" type="phone" id="phone" placeholder="Phone Number" name="phone" size="30%"/>
+			<span id="phoneErr"></span>
 			<label for="text">Comments: </label>
-			<textarea style="display: block" type="textarea" placeholder="Comments or suggestions" size="30%" cols="40" rows=10></textarea>
+			<textarea style="display: block" type="textarea" placeholder="Comments or suggestions" size="30%" cols="30" rows=10></textarea>
 			<button class="submit" type="submit">Send</button>
 		</form>
 	</div>
