@@ -110,3 +110,96 @@ var lastErr = document.getElementById("lastErr");
 var emailErr = document.getElementById("emailErr");
 var phoneErr = document.getElementById("phoneErr");
 
+var form = document.getElementsByTagName('form')[0];
+
+var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+function formValidator(event){
+  var firstCheck = document.forms["form"]["firstname"].value;
+  var lastCheck = document.forms["form"]["lastname"].value;
+  var emailCheck = document.forms["form"]["email"].value;
+  var phoneCheck = document.forms["form"]["phone"].value;
+
+  if(firstCheck == ""){
+    firstErr.innerHTML = "Please enter a first name";
+    firstErr.className = "error";
+    event.preventDefault();    
+  } 
+
+  if(firstCheck.length < 2){
+    firstErr.innerHTML = "First name must be longer than two letters.";
+    firstErr.className = "error";
+    event.preventDefault();
+  }
+
+  if(firstCheck !== "" | firstCheck.length > 2){
+    firstErr.innerHTML = "";
+    firstErr.className = "error";
+  }
+
+
+  if (lastCheck == ""){
+    lastErr.innerHTML = "Please enter a last name";
+    lastErr.className = "error";
+    event.preventDefault();
+    
+  }
+
+  if(lastCheck.length < 2){
+    lastErr.innerHTML = "Last name must be longer than two letters.";
+    lastErr.className = "error";
+    event.preventDefault();
+  }
+
+  if(lastCheck !== "" | lastCheck.length > 2){
+    lastErr.innerHTML = "";
+    lastErr.className = "error";
+  }
+
+
+
+   if (emailCheck == ""){
+    emailErr.innerHTML = "Please enter a valid email address";
+    emailErr.className = "error";
+    event.preventDefault();
+
+  }
+  }
+
+
+const nodemailer = require('nodemailer');
+
+
+nodemailer.createTestAccount((err, account) => {
+//Set up email account that will be used
+  let transporter = nodemailer.createTransport({
+    host: 'https://www.gmail.com',
+    auth: {
+      user: 'loganmusselman@gmail.com',
+      pass: 'Rusty0374'
+    }
+  });
+
+
+//Set up to and from address to send/receive mail
+  let mailOptions = {
+    from: '"Portfolio Page" <loganmusselman@gmail.com>',
+    to: 'loganmusselman@gmail.com',
+    subject: 'Your form has been filled out!',
+    text: 'Test',
+    html: '<p>Test</p>'
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if(error){
+      return console.log(error);
+    }
+    console.log('Message sent: %s', info.messageId);
+
+    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+  });
+});
+
+
+
+

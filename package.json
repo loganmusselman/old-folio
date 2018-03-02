@@ -11,7 +11,11 @@
   "author": "Logan Musselman",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "font-awesome": "^4.7.0",
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "nodemailer": "^4.6.0",
+    "requirejs": "^2.3.5",
+    "webpack": "^4.0.1"
   }
 }

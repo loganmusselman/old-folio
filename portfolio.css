@@ -5,6 +5,7 @@ font-family: 'Sacramento', cursive;
 font-family: 'VT323', monospace;
 font-family: 'Homemade Apple', cursive;
 font-family: 'Taviraj', serif;
+font-family: 'Francois One', sans-serif;
 */
 
 
@@ -92,7 +93,7 @@ button {
 	text-decoration: none;
 	color: white;
 	font-size: 1.3em;
-	
+
 }
 
 .facebook {
@@ -114,7 +115,7 @@ button {
 	text-align: center;
 	grid-column: 3 / 4;
 	grid-row: 2;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	color: floralwhite;
 }
 
@@ -122,7 +123,7 @@ button {
 	text-align: center;
 	grid-column: 3 / 4;
 	grid-row: 3;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	color: floralwhite;
 }
 
@@ -156,7 +157,7 @@ button {
 .mission {
 	grid-column: 3 / 5;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -173,7 +174,7 @@ button {
 .statement {
 	grid-column: 3 / 5;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -203,7 +204,7 @@ button {
 .who {
 	grid-column: 3 / 5;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.8em;
 	color: floralwhite;
@@ -221,7 +222,7 @@ button {
 .skill {
 	grid-column: 3 / 5;
 	grid-row: 3;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.8em;
 	color: floralwhite;
@@ -301,6 +302,30 @@ input, textarea {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
+}
+
+.contact-info{
+	
+	display: none;
+}
+
+.contact-info:hover {
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transform: translate(5px, 5px);
+	transition: .5s ease-in-out;
+}
+
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 }
@@ -412,7 +437,7 @@ button {
 	text-align: center;
 	grid-column: 3 / 4;
 	grid-row: 2;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	color: floralwhite;
 }
 
@@ -420,7 +445,7 @@ button {
 	text-align: center;
 	grid-column: 3 / 4;
 	grid-row: 3;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	color: floralwhite;
 }
 
@@ -460,7 +485,7 @@ button {
 .mission {
 	grid-column: 2 / 3;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -477,7 +502,7 @@ button {
 .statement {
 	grid-column: 5 / 6;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -515,7 +540,7 @@ button {
 .who {
 	grid-column: 2 / 4;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.8em;
 	color: floralwhite;
@@ -533,7 +558,7 @@ button {
 .skill {
 	grid-column: 5 / 7;
 	grid-row: 1;
-	font-family: 'Taviraj', serif;
+	font-family: 'Francois One', sans-serif;
 	text-align: center;
 	font-size: 1.8em;
 	color: floralwhite;
@@ -566,7 +591,7 @@ button {
 .form {
 	position: relative;
 	grid-column: 3 / 4;
-	grid-row: 1;
+	grid-row: 1 / 4;
 }
 
 input:focus, textarea:focus {
@@ -588,6 +613,26 @@ label {
 	margin-left: 100px;
 	font-family: 'Homemade Apple', cursive;
 
+}
+
+.contact-info{
+	grid-column: 1 / 2;
+	grid-row: 2;
+	margin-left: 100px;
+	font-family: 'Taviraj', serif;
+	color: floralwhite;
+	padding: 10px;
+	padding-left: 15px;
+	border-radius: 5px;
+	background-color: #f45c42;
+	box-shadow: -2px -3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .5s ease-in-out;
+}
+
+.contact-info:hover {
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transform: translate(5px, 5px);
+	transition: .5s ease-in-out;
 }
 
 .know {
@@ -618,4 +663,15 @@ input, textarea {
 	padding-right: 20px;
 	padding-bottom: 15px;
 }
+
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: red;
+
+
+}
+
 }
