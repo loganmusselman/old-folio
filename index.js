@@ -167,38 +167,6 @@ function formValidator(event){
   }
 
 
-const nodemailer = require('nodemailer');
-
-
-nodemailer.createTestAccount((err, account) => {
-//Set up email account that will be used
-  let transporter = nodemailer.createTransport({
-    host: 'https://www.gmail.com',
-    auth: {
-      user: 'loganmusselman@gmail.com',
-      pass: 'Rusty0374'
-    }
-  });
-
-
-//Set up to and from address to send/receive mail
-  let mailOptions = {
-    from: '"Portfolio Page" <loganmusselman@gmail.com>',
-    to: 'loganmusselman@gmail.com',
-    subject: 'Your form has been filled out!',
-    text: 'Test',
-    html: '<p>Test</p>'
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if(error){
-      return console.log(error);
-    }
-    console.log('Message sent: %s', info.messageId);
-
-    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-  });
-});
 
 
 

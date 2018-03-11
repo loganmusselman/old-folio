@@ -50,14 +50,14 @@
 	</div>
 	<div class="contactForm">
 		<h3 class="interest">Interested in working together?</h3>
-		<form class="form" name="form" onsubmit="return formValidator(event)" role="form" action="nodemailer()">
-			<label for="name">First Name: </label>
+		<form class="form" name="form" onsubmit="return formValidator(event)" role="form" action="http://localhost:8081/" method="POST">
+			<label for="name">First Name:* </label>
 			<input style="display: block" type="text" id="first" placeholder="First Name" name="firstname" size="30%"/>
 			<span id="firstErr"></span><br>
-			<label for="name">Last Name: </label>
+			<label for="name">Last Name:* </label>
 			<input style="display: block" type="text" id="last" placeholder="Last Name" name="lastname" size="30%"/>
 			<span id="lastErr"></span><br>
-			<label for="email">Email: </label>
+			<label for="email">Email:* </label>
 			<input style="display: block" type="email" id="email" placeholder="Email" name="email" size="30%"/>
 			<span id="emailErr"></span><br>
 			<label for="phone">Phone: </label>
