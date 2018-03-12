@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 
 app.post('/', urlencodedParser, function(req, res){
   res.sendFile(__dirname + "/" + "index.html");
-  console.log(req.query);
+  console.log(req.body);
     nodemailer.createTestAccount((err, account) => {
 //Set up email account that will be used
   let transporter = nodemailer.createTransport({
