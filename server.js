@@ -1,24 +1,25 @@
+var http = require('http');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var httpServer = http.createServer(app);
+var path = require('path');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false})
 
 const nodemailer = require('nodemailer');
 
-app.use(express.static('images'));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + "/" + "index.html");
-
+  res.sendFile(__dirname + "/" + 'index.html');
 })
 
 app.post('/', urlencodedParser, function(req, res){
   res.sendFile(__dirname + "/" + "index.html");
-
-})
-
-  nodemailer.createTestAccount((err, account) => {
+  console.log(req.query);
+    nodemailer.createTestAccount((err, account) => {
 //Set up email account that will be used
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -44,7 +45,12 @@ app.post('/', urlencodedParser, function(req, res){
     from: '"Portfolio Page" <loganmusselman@gmail.com>',
     to: 'loganmusselman@gmail.com',
     subject: 'Your form has been filled out!',
-    text: 'This is a test email'
+    text: 'text',
+    html: 'First Name: ' + req.body.firstname +' <br/>' +
+          'Last Name: ' + req.body.lastname + '<br/>' +
+          'Email: ' + req.body.email + '<br/>' +
+          'Phone: ' + req.body.phone + '<br/>' +
+          'Message: ' + req.body.message
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -55,7 +61,11 @@ app.post('/', urlencodedParser, function(req, res){
 
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   });
+
 });
+
+})
+
 
 var server = app.listen(8081, function(){
   var host = server.address().address
@@ -63,8 +73,3 @@ var server = app.listen(8081, function(){
 
   console.log("Example app listenting at http://%s:%s", host, port);
 })
-
-
-
-
-

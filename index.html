@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>Home</title>
-	<link href="portfolio.css" type="text/css" rel="stylesheet">
+	<link href="/portfolio.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Indie+Flower|Sacramento|Taviraj|VT323" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +50,7 @@
 	</div>
 	<div class="contactForm">
 		<h3 class="interest">Interested in working together?</h3>
-		<form class="form" name="form" onsubmit="return formValidator(event)" role="form" action="http://localhost:8081/" method="POST">
+		<form class="form" name="form" onsubmit="return formValidator(event)" role="form" action="http://127.0.0.1:8081/" method="POST">
 			<label for="name">First Name:* </label>
 			<input style="display: block" type="text" id="first" placeholder="First Name" name="firstname" size="30%"/>
 			<span id="firstErr"></span><br>
@@ -75,10 +75,6 @@
 			<p><i class="fas fa-envelope"></i>: loganmusselman@gmail.com</p>
 		</div>
 	</div>
-
-
-
-
 	<script src="index.js"></script>
 </body>
 </html>

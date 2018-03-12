@@ -156,14 +156,15 @@ function formValidator(event){
     lastErr.className = "error";
   }
 
-
-
    if (emailCheck == ""){
     emailErr.innerHTML = "Please enter a valid email address";
     emailErr.className = "error";
     event.preventDefault();
 
   }
+
+  
+
   }
 
 
