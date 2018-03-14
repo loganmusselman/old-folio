@@ -99,6 +99,15 @@ document.querySelector('.jsbtn2').addEventListener('click', () => {
   );
 });
 
+document.querySelector('.jsbtn3').addEventListener('click', () => {
+  scrollIt(
+    document.querySelector('.top'),
+    300,
+    'easeOutQuad',
+    () => console.log("Done")
+  );
+});
+
 //Code above this line is from https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/
 
 var first = document.getElementById("first");
@@ -163,7 +172,7 @@ function formValidator(event){
 
   }
 
-  
+
 
   }
 
