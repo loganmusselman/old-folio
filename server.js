@@ -26,8 +26,8 @@ app.post('/', urlencodedParser, function(req, res){
     port: 465,
     secure: true, //use SSL
     auth: {
-      user: 'loganmusselman@gmail.com',
-      pass: 'R037ogan'
+      user: 'loganportfolioemail@gmail.com',
+      pass: 'portfoliopassword'
     }
   });
 
@@ -42,7 +42,7 @@ app.post('/', urlencodedParser, function(req, res){
 
 //Set up to and from address to send/receive mail
   let mailOptions = {
-    from: '"Portfolio Page" <loganmusselman@gmail.com>',
+    from: '"Portfolio Page" <loganportfolioemail@gmail.com>',
     to: 'loganmusselman@gmail.com',
     subject: 'Your form has been filled out!',
     text: 'text',
