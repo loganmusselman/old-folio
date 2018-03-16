@@ -740,8 +740,9 @@ input, textarea {
 	grid-auto-rows: minmax(50px, auto);
 	grid-column-gap: 10px;
 	grid-row-gap: 15px;
-	margin-bottom: 15%;
+	margin-bottom: 10%;
 	margin-top: 5%;
+
 }
 
 .iconOne {
@@ -879,6 +880,160 @@ input, textarea {
 }
 
 .wikiP {
+	grid-row: 2;
+	grid-column: 3;
+	font-family: 'Taviraj', serif;
+	padding: 15px;
+
+}
+
+.githubProjects {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(50px, auto);
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	padding-bottom: 10%;
+	margin-top: 5%;
+	background-color: floralwhite;
+}
+
+.iconFour {
+	grid-column: 3;
+	grid-row: 2;
+	color: rgb(35, 36, 38);
+	text-align: center;
+	padding-top: 40%;
+	
+}
+
+.iconFive {
+	grid-column: 4;
+	grid-row: 3;
+	color: rgb(35, 36, 38);
+	text-align: center;
+	padding-top: 40%;
+	
+}
+
+.iconSix {
+	grid-column: 2;
+	grid-row: 3;
+	color: rgb(35, 36, 38);
+	text-align: center;
+	padding-top: 40%;
+
+	
+}
+
+.gitTitle {
+	grid-column: 3;
+	grid-row: 1;
+	color: rgb(35, 36, 38);
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.mombo {
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	color: black;
+	background-color: floralwhite;
+	background: linear-gradient(45deg, floralwhite 10%, #dcdee2 5%);
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.mombo:hover {
+	box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.momboTitle {
+	grid-row: 1;
+	grid-column: 3;
+	color: black;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+.momboP {
+	grid-row: 2;
+	grid-column: 3;
+	font-family: 'Taviraj', serif;
+	padding: 15px;
+
+}
+
+.portfolioCard {
+	grid-column: 4;
+	grid-row: 2;
+	display: grid;
+	color: black;
+	background: linear-gradient(45deg, floralwhite 10%, #dcdee2 5%);
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in;
+}
+
+.portfolioCard:hover {
+	box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.portfolioTitle {
+	grid-row: 1;
+	grid-column: 2 / 3;
+	color: black;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+}
+
+.portP {
+	grid-row: 2;
+	grid-column: 2 / 3;
+	font-family: 'Taviraj', serif;
+	padding: 15px;
+}
+
+.momboLink, .portLink, .infoLink {
+	text-decoration: none;
+	color: black;
+}
+
+.infoPage {
+	grid-column: 3;
+	grid-row: 3;
+	display: grid;
+	color: black;
+	background-color: floralwhite;
+	background: linear-gradient(45deg, floralwhite 10%, #dcdee2 5%);
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.infoPage:hover {
+	box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.infoTitle {
+	grid-row: 1;
+	grid-column: 3;
+	color: black;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+.infoP {
 	grid-row: 2;
 	grid-column: 3;
 	font-family: 'Taviraj', serif;
