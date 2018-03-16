@@ -51,6 +51,8 @@
 	<div class="contactForm">
 		<h3 class="interest">Interested in working together?</h3>
 		<form class="form" name="form" onsubmit="return formValidator(event)" role="form" action="http://127.0.0.1:8081/" method="POST">
+			<p class="warning"> Filling out this form will do nothing.</p>
+			<p class="warning"> Github Pages does not support server side.</p>
 			<label for="name">First Name:* </label>
 			<input style="display: block" type="text" id="first" placeholder="First Name" name="firstname" size="30%"/>
 			<span id="firstErr"></span><br>
@@ -66,6 +68,7 @@
 			<label for="text">Comments: </label>
 			<textarea style="display: block" type="textarea" name="message" placeholder="Comments or suggestions" size="30%" cols="30" rows=10></textarea>
 			<button class="submit" type="submit">Send</button>
+
 		</form>
 
 		<div class="contact-info">

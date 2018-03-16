@@ -1021,6 +1021,12 @@ input, textarea {
 	padding-bottom: 15px;
 }
 
+.warning {
+	grid-column: 3 / 4;
+	grid-row: 3;
+	color: red;
+}
+
 .error {
   width  : 100%;
   padding: 0;
