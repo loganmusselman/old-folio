@@ -66,6 +66,24 @@ button {
 	transition: .5s ease-in-out;
 }
 
+.projectTab {
+	grid-column: 5;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgb(244, 92, 66);
+	padding: 10px;
+	border: none;
+	font-size: 1.3em;
+	border-radius: 25%;
+}
+
+.projectTab:hover {
+	background-color: floralwhite;
+	color: black;
+	transition: .5s ease-in-out;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -375,7 +393,7 @@ body {
 
 .header {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(10, 1fr);
 	grid-auto-rows: minmax(50px, auto);
 	background-color: rgba(35, 36, 38, 0.3);
 	position: fixed;
@@ -390,9 +408,8 @@ button {
 }
 
 .about {
-	grid-column: 1;
+	grid-column: 2;
 	text-align: center;
-	margin-left: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: rgba(35, 36, 38, 0.3);
@@ -410,8 +427,7 @@ button {
 }
 
 .contact {
-	grid-column: 4;
-	margin-left: 20px;
+	grid-column: 3;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: rgba(35, 36, 38, 0.3);
@@ -428,8 +444,8 @@ button {
 }
 
 .home {
-	grid-column: 4;
-	margin-left: 20px;
+	grid-column: 1;
+	margin-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: rgba(35, 36, 38, 0.3);
@@ -440,6 +456,23 @@ button {
 }
 
 .home:hover {
+	background-color: floralwhite;
+	color: black;
+	transition: .5s ease-in-out;
+}
+
+.projectTab {
+	grid-column: 4;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(35, 36, 38, 0.3);
+	padding: 10px;
+	border: none;
+	font-size: 1.3em;
+	border-radius: 25%;
+}
+
+.projectTab:hover {
 	background-color: floralwhite;
 	color: black;
 	transition: .5s ease-in-out;
@@ -702,6 +735,171 @@ input, textarea {
   color: red;
 
 
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: minmax(50px, auto);
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	margin-bottom: 15%;
+	margin-top: 5%;
+}
+
+.iconOne {
+	grid-column: 3;
+	grid-row: 2;
+	color: floralwhite;
+	text-align: center;
+	padding-top: 40%;
+	
+}
+
+.iconTwo {
+	grid-column: 4;
+	grid-row: 3;
+	color: floralwhite;
+	text-align: center;
+	padding-top: 40%;
+	
+}
+
+.iconThree {
+	grid-column: 2;
+	grid-row: 3;
+	color: floralwhite;
+	text-align: center;
+	padding-top: 40%;
+	
+}
+
+.projectsHeader {
+	grid-column: 3;
+	grid-row: 1;
+	color: floralwhite;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.codepenOne {
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	color: black;
+	background-color: floralwhite;
+	background: linear-gradient(45deg, #dcdee2 10%, floralwhite 5%);;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.codepenOne:hover {
+	box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.cpTitle {
+	grid-row: 1;
+	grid-column: 3;
+	color: black;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+.timerP {
+	grid-row: 2;
+	grid-column: 3;
+	font-family: 'Taviraj', serif;
+	padding: 15px;
+
+}
+
+.codepenTwo {
+	grid-column: 4;
+	grid-row: 2;
+	display: grid;
+	color: black;
+	background: linear-gradient(45deg, #dcdee2 10%, floralwhite 5%);;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in;
+}
+
+.codepenTwo:hover {
+	box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.cpTitleTwo {
+	grid-row: 1;
+	grid-column: 2 / 3;
+	color: black;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+}
+
+.calcP {
+	grid-row: 2;
+	grid-column: 2 / 3;
+	font-family: 'Taviraj', serif;
+	padding: 15px;
+}
+
+.timer, .calc, .wiki {
+	text-decoration: none;
+	color: black;
+}
+
+.codepenThree {
+	grid-column: 3;
+	grid-row: 3;
+	display: grid;
+	color: black;
+	background-color: floralwhite;
+	background: linear-gradient(45deg, #dcdee2 10%, floralwhite 5%);;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.codepenThree:hover {
+	box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: .3s ease-in-out;
+}
+
+.cpTitleThree {
+	grid-row: 1;
+	grid-column: 3;
+	color: black;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+.wikiP {
+	grid-row: 2;
+	grid-column: 3;
+	font-family: 'Taviraj', serif;
+	padding: 15px;
+
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	background-color: #dcdee2;
+}
+
+.footerP {
+	grid-column: 2;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
 }
 
 }
