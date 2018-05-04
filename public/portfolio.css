@@ -172,7 +172,7 @@ button {
 
 .info {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: 10px 1fr 10px;
 	grid-auto-rows: minmax(50px, auto);
 	background-color: floralwhite;
 	margin-left: 0px;
@@ -182,8 +182,24 @@ button {
 	grid-gap: 15px;
 }
 
+.missionSection {
+	display: grid;
+	grid-template-columns: 10px 1fr 10px;
+	grid-template-rows: minmax(25px, auto);
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.statementSection {
+	display: grid;
+	grid-template-columns: 10px 1fr 10px;
+	grid-template-rows: minmax(25px, auto);
+	grid-column: 2;
+	grid-row: 1;
+}
+
 .mission {
-	grid-column: 3 / 5;
+	grid-column: 2;
 	grid-row: 1;
 	font-family: 'Libre Franklin', sans-serif;
 	text-align: center;
@@ -191,16 +207,16 @@ button {
 }
 
 .missionWords {
-	grid-column: 2 / 6;
+	grid-column: 2;
 	grid-row: 2;
 	font-family: 'Biryani', sans-serif;
 	font-size: 1em;
-	margin-left: 20px;
+	margin-right: 20px;
 
 }
 
 .statement {
-	grid-column: 3 / 5;
+	grid-column: 2;
 	grid-row: 1;
 	font-family: 'Libre Franklin', sans-serif;
 	text-align: center;
@@ -208,7 +224,7 @@ button {
 }
 
 .statementWords {
-	grid-column: 2 / 6;
+	grid-column: 2;
 	grid-row:  2;
 	font-family: 'Biryani', sans-serif;
 	font-size: 1em;
@@ -329,6 +345,12 @@ input, textarea {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
+}
+
+.warning {
+	grid-column: 3 / 4;
+	grid-row: 3;
+	color: red;
 }
 
 .contact-info{
@@ -709,17 +731,17 @@ body {
 	position: fixed;
 	background-image: url("/public/images/background.jpg");
 	background-size: cover;
-	left: 0px;
-	right: 0px;
+	background-repeat: no-repeat;
+	margin: auto;
 	z-index: -1;
-	-webkit-filter: blur(5px);
-  	-moz-filter: blur(5px);
-  	-o-filter: blur(5px);
-  	-ms-filter: blur(5px);
-  	filter: blur(5px);
-  	width: 1200px;
- 	height: 800px;
+  	width: 100%;
+ 	height: 100%;
  	display: block;
+ 	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
 }
 
 button {
